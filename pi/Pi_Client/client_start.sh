@@ -1,0 +1,1 @@
+docker run -itd --net=pi --name client pi_client java -jar Pi_client.jar
