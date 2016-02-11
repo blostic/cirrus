@@ -1,0 +1,1 @@
+docker run -d --link server3:SERVER --name client10 blost/pi_client java -jar Pi_client.jar

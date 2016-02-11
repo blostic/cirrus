@@ -75,7 +75,7 @@ public class Server {
     
     public static void main(String[] args) {
     	String port = "9990";
-    	if (args.length != 1) {
+    	if (args.length > 1) {
     		port = args[0];
     	}
     	int portNumber = new Integer(port);

@@ -1,0 +1,13 @@
+server:
+  image: blost/pi_server
+  links:
+    - "client:client"
+  ports:
+    - "9990:9990"
+  roles:
+    - global
+client:
+  image: blost/pi_client
+  links:
+    - "server:server"
+  target_num_containers: 10

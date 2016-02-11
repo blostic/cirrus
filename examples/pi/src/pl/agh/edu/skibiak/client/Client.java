@@ -46,9 +46,14 @@ public class Client {
     	String host = "localhost";
     	String port = "9990";
     	
-    	if (args.length != 2) {
-    		host = args[0];
-    		port = args[1];
+    	String portV = System.getenv("SERVER_PORT_9990_TCP_PORT");
+    	String addrV = System.getenv("SERVER_PORT_9990_TCP_ADDR");
+    	
+    	System.err.println(portV);
+    	System.err.println(addrV);
+    	if (portV != null && addrV != null && portV != "" && addrV != "") {
+    		port = portV;
+    		host = addrV;
     	}
     	
         Client client = new Client (host, new Integer(port));

@@ -1,4 +1,3 @@
-#scalarm-java:1.0
 FROM ubuntu:14.04
 MAINTAINER Piotr Skibiak <piotr.skibiak@gmail.com>
 

@@ -1,0 +1,1 @@
+docker run --name server3 blost/pi_server java -jar Pi_server.jar
