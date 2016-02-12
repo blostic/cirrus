@@ -67,6 +67,7 @@ public class Client {
         } catch (IOException e) {
             System.err.println("Cannot establish connection. Server may not be up."+e.getMessage());
         }
+        System.exit(0);
     }
     
 }

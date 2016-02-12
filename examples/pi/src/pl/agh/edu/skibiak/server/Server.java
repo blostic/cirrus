@@ -83,8 +83,9 @@ public class Server {
         try {
             Server socketServer = new Server(portNumber, 1000000000l);
             socketServer.start();
-            } catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
+        System.exit(0);
     }
 }
