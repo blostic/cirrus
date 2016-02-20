@@ -36,8 +36,6 @@ docker-machine create --driver digitalocean --digitalocean-region ams2 --digital
 docker-machine create --driver digitalocean --digitalocean-region ams2 --digitalocean-access-token xxxxxx --swarm --swarm-discovery token://$SWARM_TOKEN --engine-label public=yes agent1
 docker-machine create --driver digitalocean --digitalocean-region ams2 --digitalocean-access-token xxxxxx --swarm --swarm-discovery token://$SWARM_TOKEN --engine-label public=yes agent1
 
-docker-machine env --swarm master
-
 eval $(docker-machine env --swarm master)
 docker run -P -p 9990:9990 -e constraint:node==agent1 blost/pi_server java -jar Pi_server.jar
 docker run -P -e constraint:node==agent2 blost/pi_client java -jar Pi_client.jar $(docker-machine ip agent1)
