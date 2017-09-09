@@ -1,0 +1,23 @@
+version: '1'
+
+amqp:
+  image: 'tutum/rabbitmq:latest'
+  environment:
+    - RABBITMQ_PASS=insecure
+    - constraint:node==swarm-agent-01
+  ports:
+    - '5672:5672'
+supervisor:
+  image: 'radk0s/montage-supervisor:latest'
+  environment:
+    - constraint:node==swarm-agent-01
+    - 'S3_BUCKET="montage-dag"'
+    - 'S3_PATH="0.10/input"'
+  links:
+    - amqp
+worker:
+  image: 'radk0s/montage-worker:latest'
+  environment:
+    - constraint:node==swarm-agent-02
+  links:
+    - amqp

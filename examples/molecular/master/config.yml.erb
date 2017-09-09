@@ -1,0 +1,19 @@
+# RabbitMQ URL, defaults to ENV['AMQP_URL']
+amqp_url: <%= node['amqp_executor']['AMQP_URL'] %>
+
+# Execution storage scenario: cloud | nfs | local 
+storage: <%= node['amqp_executor']['STORAGE'] || 'cloud' %>
+
+# Number of execution threads (defaults to: ENV['THREADS'], `nprocs` if available or 1)
+threads: <%= '<%= Executor::cpu_count' %> %>
+
+# Cloud storage settings, the following hash is passed directyl to Fog::Storage, see http://fog.io/storage/ for further reference
+# Defaults to AWS S3 with credentials passed in ENV
+
+<% if node['amqp_executor']['STORAGE'].nil? or node['amqp_executor']['STORAGE'] == 'cloud' %> 
+cloud_storage:
+  :provider: AWS
+  :region:                   <%= node['amqp_executor']['AWS_REGION'] %>
+  :aws_access_key_id:        <%= node['amqp_executor']['AWS_ACCESS_KEY_ID'] %>
+  :aws_secret_access_key:    <%= node['amqp_executor']['AWS_SECRET_ACCESS_KEY'] %>
+<% end %>

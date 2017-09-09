@@ -97,18 +97,17 @@ function createWf(functionName, molecules, end_time, temperatureArray) {
   
 }
 
-if (!argv._[3]) {
-  console.log("Usage: node md_dag_generator.js molecules min_temperature max_temperature step");
+if (!argv._[4]) {
+  console.log("Usage: node md_dag_generator.js molecules min_temperature max_temperature step ent_time");
   process.exit();
 }
 
-//FIXME: this could be also a parameter
-var end_time = 0.5
 
 var molecules =  argv._[0]
 var min_temperature = argv._[1]
 var max_temperature  = argv._[2]
 var step = argv._[3]
+var end_time = argv._[4]
 
 var temperatureArray = []
 

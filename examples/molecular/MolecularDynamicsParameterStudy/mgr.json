@@ -1,0 +1,1025 @@
+{
+  "processes": [
+    {
+      "name": "run-cmd-openmp-0",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./run-cmd-openmp.sh",
+          "args": [
+            10000,
+            2,
+            0
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        "psp-output-0.tgz"
+      ]
+    },
+    {
+      "name": "run-cmd-openmp-1",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./run-cmd-openmp.sh",
+          "args": [
+            10000,
+            2,
+            1
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        "psp-output-1.tgz"
+      ]
+    },
+    {
+      "name": "run-cmd-openmp-2",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./run-cmd-openmp.sh",
+          "args": [
+            10000,
+            2,
+            2
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        "psp-output-2.tgz"
+      ]
+    },
+    {
+      "name": "run-cmd-openmp-3",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./run-cmd-openmp.sh",
+          "args": [
+            10000,
+            2,
+            3
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        "psp-output-3.tgz"
+      ]
+    },
+    {
+      "name": "run-cmd-openmp-4",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./run-cmd-openmp.sh",
+          "args": [
+            10000,
+            2,
+            4
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        "psp-output-4.tgz"
+      ]
+    },
+    {
+      "name": "run-cmd-openmp-5",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./run-cmd-openmp.sh",
+          "args": [
+            10000,
+            2,
+            5
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        "psp-output-5.tgz"
+      ]
+    },
+    {
+      "name": "run-cmd-openmp-6",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./run-cmd-openmp.sh",
+          "args": [
+            10000,
+            2,
+            6
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        "psp-output-6.tgz"
+      ]
+    },
+    {
+      "name": "run-cmd-openmp-7",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./run-cmd-openmp.sh",
+          "args": [
+            10000,
+            2,
+            7
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        "psp-output-7.tgz"
+      ]
+    },
+    {
+      "name": "run-cmd-openmp-8",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./run-cmd-openmp.sh",
+          "args": [
+            10000,
+            2,
+            8
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        "psp-output-8.tgz"
+      ]
+    },
+    {
+      "name": "run-cmd-openmp-9",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./run-cmd-openmp.sh",
+          "args": [
+            10000,
+            2,
+            9
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        "psp-output-9.tgz"
+      ]
+    },
+    {
+      "name": "run-cmd-openmp-10",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./run-cmd-openmp.sh",
+          "args": [
+            10000,
+            2,
+            10
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        "psp-output-10.tgz"
+      ]
+    },
+    {
+      "name": "run-cmd-openmp-11",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./run-cmd-openmp.sh",
+          "args": [
+            10000,
+            2,
+            11
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        "psp-output-11.tgz"
+      ]
+    },
+    {
+      "name": "run-cmd-openmp-12",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./run-cmd-openmp.sh",
+          "args": [
+            10000,
+            2,
+            12
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        "psp-output-12.tgz"
+      ]
+    },
+    {
+      "name": "run-cmd-openmp-13",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./run-cmd-openmp.sh",
+          "args": [
+            10000,
+            2,
+            13
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        "psp-output-13.tgz"
+      ]
+    },
+    {
+      "name": "run-cmd-openmp-14",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./run-cmd-openmp.sh",
+          "args": [
+            10000,
+            2,
+            14
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        "psp-output-14.tgz"
+      ]
+    },
+    {
+      "name": "run-cmd-openmp-15",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./run-cmd-openmp.sh",
+          "args": [
+            10000,
+            2,
+            15
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        "psp-output-15.tgz"
+      ]
+    },
+    {
+      "name": "run-cmd-openmp-16",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./run-cmd-openmp.sh",
+          "args": [
+            10000,
+            2,
+            16
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        "psp-output-16.tgz"
+      ]
+    },
+    {
+      "name": "run-cmd-openmp-17",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./run-cmd-openmp.sh",
+          "args": [
+            10000,
+            2,
+            17
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        "psp-output-17.tgz"
+      ]
+    },
+    {
+      "name": "run-cmd-openmp-18",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./run-cmd-openmp.sh",
+          "args": [
+            10000,
+            2,
+            18
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        "psp-output-18.tgz"
+      ]
+    },
+    {
+      "name": "run-cmd-openmp-19",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./run-cmd-openmp.sh",
+          "args": [
+            10000,
+            2,
+            19
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        "psp-output-19.tgz"
+      ]
+    },
+    {
+      "name": "run-cmd-openmp-20",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./run-cmd-openmp.sh",
+          "args": [
+            10000,
+            2,
+            20
+          ]
+        }
+      },
+      "ins": [
+        "start"
+      ],
+      "outs": [
+        "psp-output-20.tgz"
+      ]
+    },
+    {
+      "name": "make-movie-0",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./make-movie.sh",
+          "args": [
+            "psp-output-0.tgz",
+            "psp-output-0.avi"
+          ]
+        }
+      },
+      "ins": [
+        "psp-output-0.tgz"
+      ],
+      "outs": [
+        "psp-output-0.avi"
+      ]
+    },
+    {
+      "name": "make-movie-1",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./make-movie.sh",
+          "args": [
+            "psp-output-1.tgz",
+            "psp-output-1.avi"
+          ]
+        }
+      },
+      "ins": [
+        "psp-output-1.tgz"
+      ],
+      "outs": [
+        "psp-output-1.avi"
+      ]
+    },
+    {
+      "name": "make-movie-2",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./make-movie.sh",
+          "args": [
+            "psp-output-2.tgz",
+            "psp-output-2.avi"
+          ]
+        }
+      },
+      "ins": [
+        "psp-output-2.tgz"
+      ],
+      "outs": [
+        "psp-output-2.avi"
+      ]
+    },
+    {
+      "name": "make-movie-3",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./make-movie.sh",
+          "args": [
+            "psp-output-3.tgz",
+            "psp-output-3.avi"
+          ]
+        }
+      },
+      "ins": [
+        "psp-output-3.tgz"
+      ],
+      "outs": [
+        "psp-output-3.avi"
+      ]
+    },
+    {
+      "name": "make-movie-4",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./make-movie.sh",
+          "args": [
+            "psp-output-4.tgz",
+            "psp-output-4.avi"
+          ]
+        }
+      },
+      "ins": [
+        "psp-output-4.tgz"
+      ],
+      "outs": [
+        "psp-output-4.avi"
+      ]
+    },
+    {
+      "name": "make-movie-5",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./make-movie.sh",
+          "args": [
+            "psp-output-5.tgz",
+            "psp-output-5.avi"
+          ]
+        }
+      },
+      "ins": [
+        "psp-output-5.tgz"
+      ],
+      "outs": [
+        "psp-output-5.avi"
+      ]
+    },
+    {
+      "name": "make-movie-6",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./make-movie.sh",
+          "args": [
+            "psp-output-6.tgz",
+            "psp-output-6.avi"
+          ]
+        }
+      },
+      "ins": [
+        "psp-output-6.tgz"
+      ],
+      "outs": [
+        "psp-output-6.avi"
+      ]
+    },
+    {
+      "name": "make-movie-7",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./make-movie.sh",
+          "args": [
+            "psp-output-7.tgz",
+            "psp-output-7.avi"
+          ]
+        }
+      },
+      "ins": [
+        "psp-output-7.tgz"
+      ],
+      "outs": [
+        "psp-output-7.avi"
+      ]
+    },
+    {
+      "name": "make-movie-8",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./make-movie.sh",
+          "args": [
+            "psp-output-8.tgz",
+            "psp-output-8.avi"
+          ]
+        }
+      },
+      "ins": [
+        "psp-output-8.tgz"
+      ],
+      "outs": [
+        "psp-output-8.avi"
+      ]
+    },
+    {
+      "name": "make-movie-9",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./make-movie.sh",
+          "args": [
+            "psp-output-9.tgz",
+            "psp-output-9.avi"
+          ]
+        }
+      },
+      "ins": [
+        "psp-output-9.tgz"
+      ],
+      "outs": [
+        "psp-output-9.avi"
+      ]
+    },
+    {
+      "name": "make-movie-10",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./make-movie.sh",
+          "args": [
+            "psp-output-10.tgz",
+            "psp-output-10.avi"
+          ]
+        }
+      },
+      "ins": [
+        "psp-output-10.tgz"
+      ],
+      "outs": [
+        "psp-output-10.avi"
+      ]
+    },
+    {
+      "name": "make-movie-11",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./make-movie.sh",
+          "args": [
+            "psp-output-11.tgz",
+            "psp-output-11.avi"
+          ]
+        }
+      },
+      "ins": [
+        "psp-output-11.tgz"
+      ],
+      "outs": [
+        "psp-output-11.avi"
+      ]
+    },
+    {
+      "name": "make-movie-12",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./make-movie.sh",
+          "args": [
+            "psp-output-12.tgz",
+            "psp-output-12.avi"
+          ]
+        }
+      },
+      "ins": [
+        "psp-output-12.tgz"
+      ],
+      "outs": [
+        "psp-output-12.avi"
+      ]
+    },
+    {
+      "name": "make-movie-13",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./make-movie.sh",
+          "args": [
+            "psp-output-13.tgz",
+            "psp-output-13.avi"
+          ]
+        }
+      },
+      "ins": [
+        "psp-output-13.tgz"
+      ],
+      "outs": [
+        "psp-output-13.avi"
+      ]
+    },
+    {
+      "name": "make-movie-14",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./make-movie.sh",
+          "args": [
+            "psp-output-14.tgz",
+            "psp-output-14.avi"
+          ]
+        }
+      },
+      "ins": [
+        "psp-output-14.tgz"
+      ],
+      "outs": [
+        "psp-output-14.avi"
+      ]
+    },
+    {
+      "name": "make-movie-15",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./make-movie.sh",
+          "args": [
+            "psp-output-15.tgz",
+            "psp-output-15.avi"
+          ]
+        }
+      },
+      "ins": [
+        "psp-output-15.tgz"
+      ],
+      "outs": [
+        "psp-output-15.avi"
+      ]
+    },
+    {
+      "name": "make-movie-16",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./make-movie.sh",
+          "args": [
+            "psp-output-16.tgz",
+            "psp-output-16.avi"
+          ]
+        }
+      },
+      "ins": [
+        "psp-output-16.tgz"
+      ],
+      "outs": [
+        "psp-output-16.avi"
+      ]
+    },
+    {
+      "name": "make-movie-17",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./make-movie.sh",
+          "args": [
+            "psp-output-17.tgz",
+            "psp-output-17.avi"
+          ]
+        }
+      },
+      "ins": [
+        "psp-output-17.tgz"
+      ],
+      "outs": [
+        "psp-output-17.avi"
+      ]
+    },
+    {
+      "name": "make-movie-18",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./make-movie.sh",
+          "args": [
+            "psp-output-18.tgz",
+            "psp-output-18.avi"
+          ]
+        }
+      },
+      "ins": [
+        "psp-output-18.tgz"
+      ],
+      "outs": [
+        "psp-output-18.avi"
+      ]
+    },
+    {
+      "name": "make-movie-19",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./make-movie.sh",
+          "args": [
+            "psp-output-19.tgz",
+            "psp-output-19.avi"
+          ]
+        }
+      },
+      "ins": [
+        "psp-output-19.tgz"
+      ],
+      "outs": [
+        "psp-output-19.avi"
+      ]
+    },
+    {
+      "name": "make-movie-20",
+      "function": "command",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "./make-movie.sh",
+          "args": [
+            "psp-output-20.tgz",
+            "psp-output-20.avi"
+          ]
+        }
+      },
+      "ins": [
+        "psp-output-20.tgz"
+      ],
+      "outs": [
+        "psp-output-20.avi"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "name": "start",
+      "data": [
+        "start"
+      ]
+    },
+    {
+      "name": "psp-output-0.tgz"
+    },
+    {
+      "name": "psp-output-0.avi"
+    },
+    {
+      "name": "psp-output-1.tgz"
+    },
+    {
+      "name": "psp-output-1.avi"
+    },
+    {
+      "name": "psp-output-2.tgz"
+    },
+    {
+      "name": "psp-output-2.avi"
+    },
+    {
+      "name": "psp-output-3.tgz"
+    },
+    {
+      "name": "psp-output-3.avi"
+    },
+    {
+      "name": "psp-output-4.tgz"
+    },
+    {
+      "name": "psp-output-4.avi"
+    },
+    {
+      "name": "psp-output-5.tgz"
+    },
+    {
+      "name": "psp-output-5.avi"
+    },
+    {
+      "name": "psp-output-6.tgz"
+    },
+    {
+      "name": "psp-output-6.avi"
+    },
+    {
+      "name": "psp-output-7.tgz"
+    },
+    {
+      "name": "psp-output-7.avi"
+    },
+    {
+      "name": "psp-output-8.tgz"
+    },
+    {
+      "name": "psp-output-8.avi"
+    },
+    {
+      "name": "psp-output-9.tgz"
+    },
+    {
+      "name": "psp-output-9.avi"
+    },
+    {
+      "name": "psp-output-10.tgz"
+    },
+    {
+      "name": "psp-output-10.avi"
+    },
+    {
+      "name": "psp-output-11.tgz"
+    },
+    {
+      "name": "psp-output-11.avi"
+    },
+    {
+      "name": "psp-output-12.tgz"
+    },
+    {
+      "name": "psp-output-12.avi"
+    },
+    {
+      "name": "psp-output-13.tgz"
+    },
+    {
+      "name": "psp-output-13.avi"
+    },
+    {
+      "name": "psp-output-14.tgz"
+    },
+    {
+      "name": "psp-output-14.avi"
+    },
+    {
+      "name": "psp-output-15.tgz"
+    },
+    {
+      "name": "psp-output-15.avi"
+    },
+    {
+      "name": "psp-output-16.tgz"
+    },
+    {
+      "name": "psp-output-16.avi"
+    },
+    {
+      "name": "psp-output-17.tgz"
+    },
+    {
+      "name": "psp-output-17.avi"
+    },
+    {
+      "name": "psp-output-18.tgz"
+    },
+    {
+      "name": "psp-output-18.avi"
+    },
+    {
+      "name": "psp-output-19.tgz"
+    },
+    {
+      "name": "psp-output-19.avi"
+    },
+    {
+      "name": "psp-output-20.tgz"
+    },
+    {
+      "name": "psp-output-20.avi"
+    }
+  ],
+  "ins": [
+    "start"
+  ],
+  "outs": [
+    "psp-output-0.avi",
+    "psp-output-1.avi",
+    "psp-output-2.avi",
+    "psp-output-3.avi",
+    "psp-output-4.avi",
+    "psp-output-5.avi",
+    "psp-output-6.avi",
+    "psp-output-7.avi",
+    "psp-output-8.avi",
+    "psp-output-9.avi",
+    "psp-output-10.avi",
+    "psp-output-11.avi",
+    "psp-output-12.avi",
+    "psp-output-13.avi",
+    "psp-output-14.avi",
+    "psp-output-15.avi",
+    "psp-output-16.avi",
+    "psp-output-17.avi",
+    "psp-output-18.avi",
+    "psp-output-19.avi",
+    "psp-output-20.avi"
+  ]
+}

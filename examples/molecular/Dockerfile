@@ -14,13 +14,14 @@ RUN sudo apt-get install -y gcc-4.9
 
 ### install build-essential
 RUN sudo apt-get install -y build-essential
+RUN sudo apt-get install -y mencoder
 
 ### install rabbilmq and redis server
 RUN apt-get install -y rabbitmq-server redis-server
 
 ### install nodejs
-RUN add-apt-repository -y ppa:chris-lea/node.js
-RUN apt-get update
+RUN apt-get install -y curl
+RUN curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
 RUN apt-get install -y nodejs
 
 ### create ubuntu home
@@ -53,10 +54,24 @@ ADD MolecularDynamicsParameterStudy .
 RUN cp -r /home/ubuntu/hyperflow/node_modules/ /home/ubuntu/MolecularDynamicsParameterStudy
 RUN cp /home/ubuntu/MD_v4_OMP/src/main /home/ubuntu/MolecularDynamicsParameterStudy
 RUN cp /home/ubuntu/MD_v4_OMP/pov-template.inc /home/ubuntu/MolecularDynamicsParameterStudy
+RUN mkdir /home/ubuntu/MolecularDynamicsParameterStudy/src 
+RUN cp /home/ubuntu/MolecularDynamicsParameterStudy/main /home/ubuntu/MolecularDynamicsParameterStudy/src/main
 
 ### RUN Moleculer Dynamics Generator
 WORKDIR /home/ubuntu/MolecularDynamicsParameterStudy
 RUN node md_dag_generator.js 600 0.5 0.6 0.1 > md_2.json
-
 RUN apt-get install -y nano
 
+ENV HFLOW_PATH=/home/ubuntu/hyperflow/ 
+
+RUN \
+  echo "deb http://archive.ubuntu.com/ubuntu trusty-backports main restricted universe multiverse" >> /etc/apt/sources.list
+
+RUN \
+  apt-get update && \
+  apt-get -y install \
+    povray=1:3.7.0.0-4~ubuntu14.04.1 && \
+  rm -rf /var/lib/apt/lists/*
+
+
+# sudo apt-get install povray
